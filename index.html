@@ -5,26 +5,47 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width"/>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/iosevka-extended" type="text/css"/>
     </head>
     <body>
-        <div id = "file-border">
-            <p>README.md</p>
-        </div>
-        <div id="main-header">
-            <h1 id="main-header-text"><span class='accent'>#</span> Maxwell Henderson</h1>
-            <h2><span class='accent'>##</span> Who Am I</h2>
-            <p>I am a student at Mountain View Highschool who participates with the First Robotics Competition under team <a href="https://frc971.org/">971</a>.</p>
-            <h2><span class="accent">##</span> What Have I Made</h2>
-            <p>I make software that has a direct application to me and people around me.</p>
-            <div>
-                <p><span class="accent">*</span> <a href="https://github.com/maxstrid/ff-profile-switcher">Firefox Profile Switcher</a><em><span style='font-weight:normal'>: a simple and appealing UI for switching between profiles in firefox using rust and the graphics library <a href="https://iced.rs/">iced-rs</a>.</span></em></p>
-                <p><span class="accent">*</span> <a href="https://github.com/maxstrid/snippet">Snippet</a><em><span style="font-weight:normal">: a command line tool made in C++ used to make custom snippets that can be placed inside of projects using the <a href="https://marzer.github.io/tomlplusplus/">toml++</a> and <a href="https://www.boost.org/">boost</a> libraries.</span></em></p>
-            </div>
-            <h2><span class="accent">##</span> Where To Contact Me</h2>
-            <div>
-                <p><span class="accent">*</span> <a href="https://github.com/maxstrid">Github</a></p>
-                <p><span class="accent">*</span> <a href="mailto:maxwell.henderson@mailbox.org">Email</a></p>
-            </div>
+        <div id="main">
+            <h1 id="header-text">Maxwell Henderson</h1>
+            <h3 id="contact-text">
+                <a class="contact" href="mailto:maxwell.henderson@mailbox.org">email</a>
+                <a class="contact" href="https://github.com/maxstrid">github</a></h3>
+            <hr id="main-break">
+            <h1>About</h1>
+            <p>I'm a highschool student and self-taught developer who has
+            been programming for ~4 years. I develop software applications and
+            work with the First Robotics team 971. I'm passionate about online
+            privacy and FOSS software.
+            <br><br>
+            The languages I program in are Python, Rust, C++, C, and Java.
+            </p>
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <a href="https://github.com/maxstrid/vim-global">
+                        vim-global
+                    </a>
+                    <p>Use vim-motions control a mouse cursor, made because
+                    my laptop's trackpad was broken. Made in rust with x11.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/maxstrid/ff-profile-switcher">
+                        ff-profile-switcher
+                    </a>
+                    <p>UI to switch between firefox profiles
+                    Made with rust and the GUI library iced-rs.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/maxstrid/snippet">
+                        snippet
+                    </a>
+                    <p>A code snippet manager, made because my CS class required me
+                    to reuse classes a lot. Made with C++.
+                </li>
+            </ul>
         </div>
     </body>
 </html>
