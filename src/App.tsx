@@ -91,7 +91,7 @@ function App() {
                             name="mvhs-master-schedule"
                             description='Me and a partner created a web application to manage and automatically generate optimized school wide schedules, and deployed onto google cloud run using docker.'
                             tags={['React', 'Python', 'GCloud', 'Docker', 'Firebase']}
-                            gh_link='https://github/maxstrid/mvhs-master-schedule'
+                            gh_link='https://github.com/maxstrid/mvhs-master-schedule'
                             link='https://mvhs-master-schedule.web.app/'
                         />
                     </li>
