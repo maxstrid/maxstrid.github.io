@@ -1,4 +1,4 @@
-import { HomeIcon, InboxIcon } from '@heroicons/react/16/solid'
+import { HeartIcon, HomeIcon, InboxIcon } from '@heroicons/react/16/solid'
 import githubLogo from './assets/github-mark.svg';
 
 function Project({ name, description, tags, gh_link, link }: { name: string, description: string, tags: string[], gh_link: string, link?: string }) {
@@ -122,6 +122,9 @@ function App() {
 
                     </li>
                 </ul>
+            </div>
+            <div className='justify-center flex'>
+                <a className='flex flex-row w-fit' href='https://github.com/maxstrid/maxwellh.dev'>Hosted with <HeartIcon className='w-6' /> on Github Pages</a>
             </div>
         </>
     )
