@@ -3,7 +3,7 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/main.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
@@ -12,7 +12,7 @@ module.exports = {
         static: {
             directory: path.resolve(__dirname, 'static'),
         },
-        watchFiles: ['src/**/*.html'],
+        watchFiles: ['src/**/*.html', 'src/**/*.css', 'src/**/*.js'],
         port: 3000,
         open: true,
         hot: true
@@ -29,7 +29,9 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "src/*.html", to: "./[name][ext]" },
+                { from: "src/routes/*.html", to: "./[name][ext]" },
+                { from: "src/routes/projects/*.html", to: "./projects/[name][ext]" },
+                { from: "src/routes/blog/*.html", to: "./blog/[name][ext]" },
                 { from: "static/*", to: "./[name][ext]" }
             ],
         })

@@ -7,7 +7,7 @@
     "build": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack serve",
     "predeploy": "build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
