@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Work Sans';
+        font-weight: 300;
+        src: url('../static/WorkSans-Light.ttf') format('truetype')
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        src: url('../static/WorkSans-Regular.ttf') format('truetype')
+    }
+    @font-face {
+        font-family: 'Work Sans';
+        font-weight: 900;
+        src: url('../static/WorkSans-Black.ttf') format('truetype')
+    }
+}
+
+html {
+    @apply bg-gray-900 text-white font-work-sans;
+}
