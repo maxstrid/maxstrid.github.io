@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,7 +10,39 @@
 <body>
     <script src="bundle.js"></script>
     <mh-navbar></mh-navbar>
-    Projects
+    <main>
+        <h2 class="font-bold text-2xl">Projects</h2>
+        <ul class="flex flex-col space-y-4 mt-5">
+            <li>
+                <define-project name='mvhs-master-schedule'
+                    description='Me and a partner created a web application to manage and automatically generate optimized school wide schedules, and deployed onto google cloud run using docker.'
+                    tags='React, Python, GCloud, Docker, Firebase'
+                    links='https://mvhs-master-schedule.web.app/, https://github.com/maxstrid/mvhs-master-schedule'>
+                </define-project>
+            </li>
+            <li>
+                <define-project name='ChatFRC'
+                    description='Using OpenAI and Langchain I created a chat app to help other robotics students with general questions. I was then able to deploy it to a remote server using docker compose.'
+                    tags='Svelte, Sveltekit, Docker, OpenAI, Langchain'
+                    links='https://chatfrc.app, https://github.com/frc971/chatfrc'>
+                </define-project>
+            </li>
+            <li>
+                <define-project name='nixconfig'
+                    description='Using the Nix programming language along with NixOS I programatically describe the configurations for 4 machines, setting up a home server cluster and a vpn with wireguard.'
+                    tags='Nix, NixOS, Docker, Wireguard' links='https://github.com/maxstrid/nixconfig'>
+                </define-project>
+            </li>
+            <li>
+                <define-project name='Worktree'
+                    description='Using Rust I built a tool to help manage my git worktrees, along with making the transition process easy. I also integrated it with gerrit commands in order to translate gerrit commits into a new worktree.'
+                    tags='Rust, Git, Gerrit' links='https://github.com/maxstrid/worktree'>
+                </define-project>
+            </li>
+        </ul>
+    </main>
+
+    <mh-footer></mh-footer>
 </body>
 
 </html>

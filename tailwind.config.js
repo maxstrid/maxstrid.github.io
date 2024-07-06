@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             colors: {
-                accent: '#B8BB26'
+                accent: '#B8BB26',
             },
             fontFamily: {
                 'work-sans': ['Work Sans'],
