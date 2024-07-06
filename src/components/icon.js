@@ -26,6 +26,6 @@ export const HeartIcon = buildIcon(html(`
 `));
 
 export const GithubIcon = buildIcon(html(`
-    <img src='github-mark-white.svg' width="24" height="24" alt='github white logo'/>
+    <img src='/github-mark-white.svg' width="24" height="24" alt='github white logo'/>
 `));
 

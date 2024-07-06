@@ -19,7 +19,7 @@ function define(content) {
 }
 
 export const loadFooter = () => {
-    fetch("templates/footer.html")
+    fetch("/templates/footer.html")
         .then(stream => stream.text())
         .then(text => {
             const element = define(text);

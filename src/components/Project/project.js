@@ -66,7 +66,7 @@ function define(content) {
 }
 
 export const loadProject = () => {
-    fetch("templates/project.html")
+    fetch("/templates/project.html")
         .then(stream => stream.text())
         .then(text => {
             const element = define(text);

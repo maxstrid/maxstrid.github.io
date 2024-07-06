@@ -19,7 +19,7 @@ function define(content) {
 }
 
 export const loadNavbar = () => {
-    fetch("templates/navbar.html")
+    fetch("/templates/navbar.html")
         .then(stream => stream.text())
         .then(text => {
             const element = define(text);
