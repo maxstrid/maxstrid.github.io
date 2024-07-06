@@ -1,0 +1,20 @@
+<div class="bg-gray-900/50 p-4 border-accent border-2">
+    <div class="flex space-x-1 flex-wrap">
+        <h3 class='font-bold'>
+            <slot class="name"></slot>
+        </h3>
+        <slot class="links"></slot>
+    </div>
+    <div class='flex space-x-2 items-center'>
+        <h3 class="font-bold">Tags</h3>
+        <ul class="flex flex-row flex-wrap space-x-2">
+            <slot class="tags"></slot>
+        </ul>
+    </div>
+    <div>
+        <h3 class="font-bold">Description</h3>
+        <p>
+            <slot class="description"></slot>
+        </p>
+    </div>
+</div>

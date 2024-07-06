@@ -32,7 +32,9 @@ module.exports = {
                 { from: "src/routes/*.html", to: "./[name][ext]" },
                 { from: "src/routes/projects/*.html", to: "./projects/[name][ext]" },
                 { from: "src/routes/blog/*.html", to: "./blog/[name][ext]" },
-                { from: "static/*", to: "./[name][ext]" }
+                { from: "static/*", to: "./[name][ext]" },
+                // Flatten component templates into a templates dir
+                { from: "src/components/**/*.html", to: "./templates/[name][ext]" }
             ],
         })
     ]

@@ -23,3 +23,11 @@
 html {
     @apply bg-gray-900 text-white font-work-sans;
 }
+
+main {
+    @apply bg-gray-700/50 lg:w-1/2 md:w-2/3 sm:w-full m-auto mt-10 p-4;
+}
+
+a {
+    @apply hover:bg-accent/50
+}
