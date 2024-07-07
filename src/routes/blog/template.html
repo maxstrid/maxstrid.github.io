@@ -10,9 +10,8 @@
 <body>
     <script src="/bundle.js"></script>
     <mh-navbar></mh-navbar>
-    <main>
-        <h2 class="font-bold text-2xl">Blog</h2>
-        <blog-link name="Hello, World?" link="/blog/1-online.html"></blog-link>
+    <main id="article">
+        {{SLOT}}
     </main>
     <mh-footer></mh-footer>
 </body>
