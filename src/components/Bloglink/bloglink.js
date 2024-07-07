@@ -1,22 +1,24 @@
 /**
-    * Defines the project class
+    * Defines the bloglink class
     * @param {string} content
     */
 function define(content) {
-    return class Project extends HTMLElement {
+    return class Bloglink extends HTMLElement {
         /**
-            * Represents an individual project showcase
+            * Represents an individual blog link
             * @constructor
             */
         constructor() {
             super();
 
-            this.name = '';
             this.link = '';
+
+            this.name = '';
+            this.date = '';
         }
 
         static get observedAttributes() {
-            return ['name', 'link'];
+            return ['link'];
         }
 
         /**
@@ -26,6 +28,27 @@ function define(content) {
             */
         attributeChangedCallback(property, _, newValue) {
             this[property] = newValue;
+
+            if (property == 'link') {
+                this.extractContent(this.link);
+            }
+        }
+
+        /**
+            * @param {string} link
+            */
+        extractContent(link) {
+            fetch(link)
+                .then(stream => stream.text())
+                .then(text => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, "text/html");
+
+                    this.name = doc.querySelector('#article h1').textContent;
+                    this.date = doc.querySelector('#article p').textContent;
+
+                    this.connectedCallback();
+                })
         }
 
         connectedCallback() {
@@ -33,6 +56,7 @@ function define(content) {
 
             this.querySelector('a').href = this.link;
             this.querySelector('slot.name').outerHTML = this.name;
+            this.querySelector('slot.date').outerHTML = this.date;
         }
     }
 }

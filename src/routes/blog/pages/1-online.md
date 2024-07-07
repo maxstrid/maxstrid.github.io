@@ -1,3 +1,5 @@
+07/08/24
+
 # Hello, World? 
 
 If you're seeing this it means I have forced webpack into thinking its a static site generator. It also means the javascript gods look down upon me *unfavorably*.
