@@ -24,10 +24,30 @@ html {
     @apply bg-gray-900 text-white font-work-sans;
 }
 
+#article h1 {
+    @apply text-3xl font-bold mt-2 mb-2;
+}
+
+#article h2 {
+    @apply text-2xl font-bold mt-2 mb-2;
+}
+
+#article h3 {
+    @apply text-xl font-bold mt-2 mb-2;
+}
+
+#article pre {
+    @apply bg-gray-900 p-4 m-4 text-wrap;
+}
+
+code {
+    @apply bg-gray-900 text-accent;
+}
+
 main {
     @apply bg-gray-700/50 lg:w-1/2 md:w-2/3 sm:w-full m-auto mt-10 p-4;
 }
 
 a {
-    @apply hover:bg-accent/50
+    @apply hover:bg-accent/50 underline;
 }
